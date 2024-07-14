@@ -20,6 +20,7 @@ ProjectConfig.switchCondition = true;
 ProjectConfig.genStartup      = false;
 ProjectConfig.genLinker       = false;
 scripting.suppress("All four File Generation options must be enabled in order to guarantee Device Migration support\\. If an option is disabled, the user must manually configure that setting on its own file\\.", ProjectConfig);
+scripting.suppress("Migrating requires going through the Switch Board or Device menu in the Device View section\\.", ProjectConfig, "deviceSpin");
 scripting.suppress("Driverlib inclusion is required for most use cases\\. Disable with caution\\.", ProjectConfig, "genLibDL");
 
 /**
